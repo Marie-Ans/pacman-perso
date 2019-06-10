@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">   
+    <title>Marie ANS - PACMAN</title>
+</head>
+<body>
+    <header>
+        <p>Marie ANS</p>
+        <p>Développeuse full stack js</p>
+    </header>
+    <nav>
+        <ul>
+            <li id="selected">PACMAN</li>
+            <a href="cv.html"><li class="active">CV</li></a>
+        </ul>
+    </nav>
+    <main>
+        <div id="regles">
+            <p>Utilisez les FLECHES pour avancer et ENTRER pour mettre en pause</p>
+            <p>Récupérez les bonus pour découvrir les points clés du CV</p>
+            <p>Mangez toutes les croquettes pour accéder au CV complet</p>
+        </div> 
+        <section class="jeu">
+            <div id="alerte">Vous devez agrandir la fenêtre de votre navigateur</div>
+            <div id="pause">Appuyez sur ENTRER pour reprendre</div>
+            <canvas id="canvas" width = 500px height = 525px></canvas>
+            <div class="scoreAndCo">
+                <div class="bouton" id="jouer">JOUER</div>
+                <div class="infosVies">
+                    <p>Vies : </p> <div class="viesVides"><img src="img/vies_completes.png" alt="" id="vies"></div>
+                </div>
+                <p>Bonus Compétences : </p>
+                <div class="bonus" id="competences">HTML / CSS,  Javascript Front & Back</div>
+                <p>Bonus Formation : </p>
+                <div class="bonus" id="formation"> Certification RNCP, Dev. Fullstack JS</div>
+                <p>Bonus Parcours : </p>
+                <div class="bonus" id="parcours">Ergonomie IHM, Digital Learning</div>
+                <p>Croquettes: </p>
+                <div class="croquettesVides"><div id="croquettes"></div></div>
+                <div id="resultat">
+                    <p>Vous avez gagné!</p>
+                    <div class="bouton"><a href="cv.html">Voir le CV</a></div>
+                </div>
+
+            </div>  
+        </section>
+    </main>
+    <footer>
+        <div id="mail">
+            <a href="mailto:marie.ans@hotmail.com">marie.ans@hotmail.com</a>
+        </div>
+        <div id="lin">
+            <a href="https://www.linkedin.com/in/marie-ans-fullstackjs" target="_blank" rel="noopener noreferrer">Me contacter via Linkedin</a>
+        </div>
+        <div id="tel">
+            +336 28 04 44 45
+        </div>
+    </footer>
+    <script src="js/positions.js"></script>
+    <script src="js/bonus.js"></script>
+    <script src="js/personnages.js"></script>
+    <script src="js/jeu.js"></script>
+    <script src="js/jouer.js"></script>
+</body>
+</html>

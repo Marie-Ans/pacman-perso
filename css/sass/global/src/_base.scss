@@ -1,0 +1,16 @@
+body  {
+    background-color: $screenColor;
+    color: rgb(42, 43, 36);
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.95em;
+    
+
+    a {
+        color: $linkColor;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+}

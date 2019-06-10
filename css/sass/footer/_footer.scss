@@ -1,0 +1,41 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+
+    div#mail {
+        background-image: url('../img/mail2018white.png');
+    }
+
+    div#lin {
+        background-image: url('../img/In20white.png');
+    }
+
+    div#tel {
+        background-image: url('../img/phone20white.png');
+        color: #fff;
+    }
+
+    div#mail, div#lin, div#tel  {
+        background-repeat: no-repeat;
+        height:20px;
+        margin-top: 10px;
+        padding-left: 25px;
+    }
+}
+
+@media screen and (min-width:960px) {
+
+    footer {
+        display: flex;
+        flex-direction: row;
+
+        div {
+            margin-right: 30px;
+        }
+    }
+}
